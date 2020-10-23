@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ruler", "Ruler.vcxproj", "{65228BC6-C77B-4A8A-8036-2EF029C6517F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65228BC6-C77B-4A8A-8036-2EF029C6517F}.Debug|x86.ActiveCfg = Debug|Win32
+		{65228BC6-C77B-4A8A-8036-2EF029C6517F}.Debug|x86.Build.0 = Debug|Win32
+		{65228BC6-C77B-4A8A-8036-2EF029C6517F}.Release|x86.ActiveCfg = Release|Win32
+		{65228BC6-C77B-4A8A-8036-2EF029C6517F}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C739CAD5-AF0F-4636-8CFC-68F39776C72A}
+	EndGlobalSection
+EndGlobal
