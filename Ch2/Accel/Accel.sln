@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Accel", "Accel.vcxproj", "{EAC1AD7B-DE8E-4552-9D4D-FAACACBEBCFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAC1AD7B-DE8E-4552-9D4D-FAACACBEBCFC}.Debug|x86.ActiveCfg = Debug|Win32
+		{EAC1AD7B-DE8E-4552-9D4D-FAACACBEBCFC}.Debug|x86.Build.0 = Debug|Win32
+		{EAC1AD7B-DE8E-4552-9D4D-FAACACBEBCFC}.Release|x86.ActiveCfg = Release|Win32
+		{EAC1AD7B-DE8E-4552-9D4D-FAACACBEBCFC}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA64CF07-604F-4A96-8092-72ABE22BFA68}
+	EndGlobalSection
+EndGlobal

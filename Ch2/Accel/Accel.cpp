@@ -146,7 +146,7 @@ void CMainWindow::OnPaint ()
     //
     // Add numbers and button outlines to the row headers.
     //
-    for (i=0; i<99; i++) {
+    for (int i=0; i<99; i++) {
         int y = (i * m_nCellHeight) + m_nCellHeight;
         dc.MoveTo (0, y);
         dc.LineTo (m_nRibbonWidth, y);
@@ -166,7 +166,7 @@ void CMainWindow::OnPaint ()
     //
     // Add letters and button outlines to the column headers.
     //
-    for (j=0; j<26; j++) {
+    for (int j=0; j<26; j++) {
         int x = (j * m_nCellWidth) + m_nRibbonWidth;
         dc.MoveTo (x, 0);
         dc.LineTo (x, m_nCellHeight);
