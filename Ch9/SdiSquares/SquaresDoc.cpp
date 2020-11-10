@@ -38,11 +38,8 @@ END_MESSAGE_MAP()
 // CSquaresDoc construction/destruction
 
 CSquaresDoc::CSquaresDoc()
-	: m_clrCurrentColor{ 0 }
-  , m_clrGrid{ 0 }
 {
 	// TODO: add one-time construction code here
-	-
 }
 
 CSquaresDoc::~CSquaresDoc()
