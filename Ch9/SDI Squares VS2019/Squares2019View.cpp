@@ -20,11 +20,19 @@
 
 // CSquares2019View
 
+#ifdef USESCROLLVIEW
+IMPLEMENT_DYNCREATE(CSquares2019View, CScrollView)
+
+BEGIN_MESSAGE_MAP(CSquares2019View, CScrollView)
+	ON_WM_LBUTTONDOWN()
+END_MESSAGE_MAP()
+#else
 IMPLEMENT_DYNCREATE(CSquares2019View, CView)
 
 BEGIN_MESSAGE_MAP(CSquares2019View, CView)
 	ON_WM_LBUTTONDOWN()
 END_MESSAGE_MAP()
+#endif
 
 // CSquares2019View construction/destruction
 
@@ -58,7 +66,9 @@ void CSquares2019View::OnDraw(CDC* pDC)
 	// TODO: add draw code for native data here
 	// Set the mapping mode to MM_LOENGLISH.
 	//
+#ifndef USESCROLLVIEW
 	pDC->SetMapMode(MM_LOENGLISH);
+#endif
 
 	//
 	// Draw the 16 squares.
@@ -122,7 +132,11 @@ void CSquares2019View::OnLButtonDown(UINT nFlags, CPoint point)
 	// Convert to click coordinates to MM_LOENGLISH units.
 	//
 	CClientDC dc(this);
+#ifdef USESCROLLVIEW
+	OnPrepareDC(&dc);
+#else
 	dc.SetMapMode(MM_LOENGLISH);
+#endif
 	CPoint pos = point;
 	dc.DPtoLP(&pos);
 
@@ -139,4 +153,13 @@ void CSquares2019View::OnLButtonDown(UINT nFlags, CPoint point)
 
 	CView::OnLButtonDown(nFlags, point);
 
+}
+
+
+void CSquares2019View::OnInitialUpdate()
+{
+	CScrollView::OnInitialUpdate();
+
+	// TODO: Add your specialized code here and/or call the base class
+	SetScrollSizes(MM_LOENGLISH, CSize(500, 500), CSize(200, 200), CSize(50, 50));
 }
