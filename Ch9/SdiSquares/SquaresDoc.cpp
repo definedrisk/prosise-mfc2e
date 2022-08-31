@@ -40,6 +40,7 @@ END_MESSAGE_MAP()
 CSquaresDoc::CSquaresDoc()
 {
 	// TODO: add one-time construction code here
+
 }
 
 CSquaresDoc::~CSquaresDoc()
@@ -108,19 +109,13 @@ COLORREF CSquaresDoc::GetCurrentColor()
 COLORREF CSquaresDoc::GetSquare(int i, int j)
 {
 	ASSERT (i >= 0 && i <= 3 && j >= 0 && j <= 3);
-#pragma warning(push)
-#pragma warning(disable : 6385)
 	return m_clrGrid[i][j];
-#pragma warning(pop)
 }
 
 void CSquaresDoc::SetSquare(int i, int j, COLORREF color)
 {
 	ASSERT (i >= 0 && i <= 3 && j >= 0 && j <= 3);
-#pragma warning(push)
-#pragma warning(disable : 6386)
 	m_clrGrid[i][j] = color;
-#pragma warning(pop)
 	SetModifiedFlag (TRUE);
 	UpdateAllViews (NULL);
 }

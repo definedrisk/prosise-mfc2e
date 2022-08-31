@@ -45,8 +45,8 @@ protected:
 
 // Generated message map functions
 protected:
-	COLORREF m_clrCurrentColor{};
-	COLORREF m_clrGrid[4][4]{};
+	COLORREF m_clrCurrentColor;
+	COLORREF m_clrGrid[4][4];
 	//{{AFX_MSG(CSquaresDoc)
 	afx_msg void OnColorRed();
 	afx_msg void OnColorYellow();

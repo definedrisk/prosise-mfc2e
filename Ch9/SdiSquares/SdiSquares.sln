@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.30517.126
+VisualStudioVersion = 16.0.32802.440
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SdiSquares", "SdiSquares.vcxproj", "{A6DA4910-D7C1-47F7-AFB7-7D67B15B3EDC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SdiSquares", "SdiSquares.vcxproj", "{6906A1DD-E3C7-45C5-9BFC-869708AF5E63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A6DA4910-D7C1-47F7-AFB7-7D67B15B3EDC}.Debug|x86.ActiveCfg = Debug|Win32
-		{A6DA4910-D7C1-47F7-AFB7-7D67B15B3EDC}.Debug|x86.Build.0 = Debug|Win32
-		{A6DA4910-D7C1-47F7-AFB7-7D67B15B3EDC}.Release|x86.ActiveCfg = Release|Win32
-		{A6DA4910-D7C1-47F7-AFB7-7D67B15B3EDC}.Release|x86.Build.0 = Release|Win32
+		{6906A1DD-E3C7-45C5-9BFC-869708AF5E63}.Debug|x86.ActiveCfg = Debug|Win32
+		{6906A1DD-E3C7-45C5-9BFC-869708AF5E63}.Debug|x86.Build.0 = Debug|Win32
+		{6906A1DD-E3C7-45C5-9BFC-869708AF5E63}.Release|x86.ActiveCfg = Release|Win32
+		{6906A1DD-E3C7-45C5-9BFC-869708AF5E63}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {BDA86E5C-0BB1-4167-8486-D1DC8F89066C}
+		SolutionGuid = {D0CA0201-A839-47ED-BCC8-79D548D34600}
 	EndGlobalSection
 EndGlobal
