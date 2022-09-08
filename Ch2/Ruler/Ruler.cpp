@@ -34,7 +34,8 @@ void CMainWindow::OnPaint ()
     // Initialize the device context.
     //
     dc.SetMapMode (MM_LOENGLISH);
-    dc.SetTextAlign (TA_CENTER | TA_BOTTOM);
+    //dc.SetTextAlign (TA_CENTER | TA_BOTTOM);
+    dc.SetTextAlign(TA_RIGHT | TA_BASELINE);
     dc.SetBkMode (TRANSPARENT);
 
     //
@@ -62,8 +63,20 @@ void CMainWindow::OnPaint ()
         dc.MoveTo (i, -175);
         dc.LineTo (i, -200);
 
+        // Rotated text p73
+
+        LOGFONT lf;
+        ::ZeroMemory(&lf, sizeof(lf));
+        lf.lfEscapement = 900;
+        lf.lfOrientation = 900;
+        lf.lfPitchAndFamily = DEFAULT_PITCH | FF_MODERN;
+        CFont font;
+        font.CreateFontIndirect(&lf);
+        CFont* pOldFont = dc.SelectObject(&font);
+
         CString string;
         string.Format (_T ("%d"), (i / 100) - 1);
+
         dc.TextOut (i, -175, string);
     }
 }
